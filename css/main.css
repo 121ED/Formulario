@@ -1,0 +1,238 @@
+/* {
+  border: 2px solid blue;
+}*/
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #e5e5e5; /* Funco do body*/
+  position: relative;
+  display: flex;
+  flex-direction: column; /*coluna */
+  background-repeat: no-repeat; /*Não repetir */
+}
+ul {
+  padding: 0px !important;
+  display: flex;
+}
+.menu-principal {
+  width: 100%;
+  background-color: #f3f3f3; /* cor do fundo */
+  height: 60px; /* altura */
+  display: flex;
+  
+}
+main {
+  margin: 0 auto;
+  width: 980px;
+  position: relative;
+}
+/*cabecalho */
+.logo {
+  float: left;
+  color: black;
+  /* padding: 16px;*/
+  width: 70%;
+}
+.redes-sociais {
+  width: 30%;
+  float: right;
+}
+.redes-sociais ul li {
+  display: inline-block; /*resetar os pontos, tirar os pontos */
+  float: left;
+  list-style: none;
+  margin-left: 5px;
+}
+
+.redes-sociais img {
+  /*ajuste do png da rede social */
+  width: 40px;
+  height: 40px;
+  border: 4px;
+  margin-right: 8px;
+}
+/*barra menu */
+
+.header-2 {
+  background-color: #ffffff;
+  width: 980px;
+  margin: 0 auto;
+}
+.menu-urls {
+  height: 75px;
+  border-bottom: 3px solid black; /*Borda solida do menu */
+}
+.menu ul li:hover {
+  border-bottom: 2px solid white;
+}
+.menu ul li a:hover {
+  /*Efeito no menu */
+  color: black;
+}
+.menu ul li {
+  display: inline-block; /*resetar os pontos, tirar os pontos */
+  color: #8b8b8b;
+  margin-left: 15px; /*Distancia*/
+}
+.menu ul li a {
+  color: white; /*Cor*/
+  text-decoration: none;
+  font-size: 18px; /*Tamanho da fonte do menu*/
+  text-transform: uppercase; /*deixa todas as letras do menu maiuculas*/
+  display: flex;
+}
+.menu {
+  width: 60%;
+  float: left;
+  display: flex;
+}
+
+.col-1000 {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: green;
+} /*coluna 100% da tela */
+nav {
+  background-color: #ffffff;
+  width: 980px;
+  margin: 0 auto;
+}
+input,
+select {
+  border: 0px solid black;
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  background-color: #f1f1f1;
+  margin: 5px 0 22px 0;
+  appearance: none;,
+  box-sizing: border-box; /* Borda Input*/
+  border-radius: 15px;
+  margin: 5px;
+  flex-wrap: wrap;
+  display: flex;
+  
+}
+
+.form h1{
+  margin-top: 70px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+}
+  }
+.titulo {
+  margin: auto;
+  width: 45%;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+h1 {
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 15px;
+}
+span {
+  color: red;
+  display: none;
+  position: relative;
+}
+.form {
+  margin-top:20px;
+  flex: 1 1 30%;
+  display: flex;
+  border-radius: 15px;
+  width: 980px;
+  position: relative;
+  flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+/*SOBRE*/
+h1,
+h2,
+h3,
+body,
+p {
+  /* Tirando a margem padrão do título */
+  margin: 0;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-weight: normal;
+}
+h1 span {
+  font-weight: bold;
+}
+h3 {
+  font-family: "Open Sans", serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+}
+.usuario /* Cabecalho*/ {
+  background-color: #e5e5e5;
+  width: 980px;
+  margin: 0 auto;
+}
+.sobre /*borda das colunas*/ {
+  display: flex;
+  padding: 40px 70px;
+}
+button {
+  background-color: green;
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/*FIM index*/
+
+/*footer*/
+footer {
+  margin-top: 20px;
+  background-color: green;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer h2 {
+  color: white;
+}
+/* Responsividade */
+@media only screen and (max-width: 700px) {
+  .formulario {
+    display: block;
+  }
+  input,
+  select {
+    width: 100%;
+  }
+  .titulo {
+    width: 85%;
+    display: block;
+  }
+  .form{
+    width: 100%;
+  }
+}
